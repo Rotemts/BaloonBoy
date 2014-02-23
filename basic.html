@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Sample "Hello, World" Application</title>
+  </head>
+  <body bgcolor="white">
+<script="text/javascript">
+$("button").click(function(){
+  $.post("demo_test_post.asp",
+  {
+    name:getElementById("pass").innerHTML,
+    city:"Duckburg"
+  },
+  function(data,status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+});
+
+ <form name="change" method="post">
+pass <input type="password" name="pass" id ="pass">
+user <input type="text" name="user" id ="user">
+email <input type="text" name="email" id="email">
+<input type="submit" value="Submit">
+</form> 
+ <br/>
+ 
+
+  </body>
+</html>
